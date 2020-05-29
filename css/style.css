@@ -1,0 +1,168 @@
+/***** FONT *****/
+
+@font-face {
+    font-family: 'Wisdom Script Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Wisdom Script Regular'), url('../fonts/WisdomScriptAJ.woff') format('woff');
+}
+
+/***** BASE SETTINGS *****/
+
+html {
+    background-color: lightgrey;
+    /* color: rgb(142, 100, 163); */
+    color: #58647d;
+    font-family: 'Open Sans', sans-serif;
+}
+/* font-family: 'Bellota', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Wisdom Script Regular', script;
+ */
+/****** GRID ******/
+
+.full-width {
+    /* width: 1200px; */
+    width: 100%;
+    margin: 0 auto;
+}
+/* Different widths for left and right because the nav is somewhat wider than the h1, and this makes it fit properly */
+.left-half-width {
+    /* width: 400px; */
+    width: 33.3%;
+    float: left;
+}
+.right-half-width {
+    /* width: 800px; */
+    width: 66.6%;
+    float: left;
+}
+.half-width {
+    /* width: 600px; */
+    width: 50%;
+    float: left;
+}
+.third-width {
+    /* width: 399px; */
+    width: 33.3%;
+    float: left;
+}
+
+header {
+    background: url(../img/background2a.png);
+    height: 700px;
+    background-size: cover;
+    background-position: 50% 50%; 
+    display: grid;
+    grid-template-columns: 20% 35% 35% 10%;
+    grid-template-rows: 60% 40%;
+    padding: 200px 0 0 30px;
+}
+
+header h1 {
+    font-family: 'Dancing Script', cursive;
+    color: #58647d; /* color from mountains below */
+    font-size: 35px;
+    /* padding: 200px 0 0 30px; */
+    text-align: center;
+    grid-column-start: 2;
+    margin: 0;
+}
+header nav {
+    grid-column-start: 3;
+    font-family: 'Inter', sans-serif;
+    /* padding: 200px 0 0 0; */
+    padding-left: 0;
+}
+header h2 {
+    padding-top: 30px;
+}
+
+header h2 {
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+header h2 {
+    text-align: center;
+}
+
+nav {
+    float: right; 
+    /* padding: 75px 25px; */
+    padding: 0px 25px;
+}
+nav ul {
+    padding-left:0; /* instead of padding-inline-start: 0; to override default*/
+}
+nav ul li{
+    display: inline-block;
+}
+nav ul li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+    /* color: #828282; */
+    color: #58647d; /* color from mountains below */
+    padding-left: 30px; 
+}
+
+header h2 {
+    color: #e7d8bf;     /* taken from the sky above */
+}
+
+.itals {
+    font-style: italic;
+}
+.orange {
+    color: #ffa003;
+}
+
+main h1 {
+    padding: 30px;
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 0;
+}
+
+main h2 {
+    padding: 10px 30px 10px 60px;
+}
+p {
+    font-size: 1.4em;
+    padding: 10px 30px 10px 60px;
+    margin-top: 0;
+    margin-bottom: .5em;
+}
+.contact p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.projects ul {
+    padding-left: 80px; /* instead of padding-inline-start: 80px; to override default */
+}
+.projects li {
+    font-size: 1.2em;
+    padding-bottom: 5px;
+}
+
+footer {
+    background-color:#6d6c6c;
+    color: #e7d8bf;
+    text-align: center;
+    margin-top: 30px;
+    height: 125px;
+}
+footer p {
+    font-size: .8em;
+    margin: 0 auto;
+    padding: 20px 0 10px 0;
+}
+.email-addr:link, .email-addr:visited, .email-addr:hover, .email-addr:active {
+	color:	#e7d8bf;
+	text-decoration: none;
+}
+.contact-addr:link, .contact-addr:visited, .contact-addr:hover, .contact-addr:active {
+	color:	#58647d;
+	text-decoration: none;
+}
